@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import logo from "./assets/img/logo1.png"
+import { Router, BrowserRouter, Routes, Route } from "react-router-dom"
+import Navigation from "./components/Navigation/Navigation"
+import socket from "./store/webSocket"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css"
+
+//importing Pages
+import Login from "./pages/Login/Login"
+
+export default function App() {
+    console.log(socket)
+    return (
+        <div className="App">
+            <div className="logo-div">
+                <img className="logo" src={logo}></img>
+            </div>
+
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Login />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
+    )
 }
-
-export default App;

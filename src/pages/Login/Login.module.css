@@ -1,0 +1,47 @@
+.login-page {
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+}
+.login-form {
+    width: 85%;
+}
+.login-input {
+    padding: 20px 10px;
+    margin-bottom: 5px;
+    width: 90%;
+    /* background-color: ; */
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+.login-input::placeholder {
+    font-family: sans-serif;
+}
+.connection-button {
+    background-color: #ed7c1e;
+    color: whitesmoke;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+.connection-button:hover {
+    background-color: #a84c00;
+}
+p {
+    color: white;
+    font-size: 1.1rem;
+}
+.link {
+    color: #ea6900;
+    text-decoration: underline;
+    border: 1px solid #ed7c1e;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+}
